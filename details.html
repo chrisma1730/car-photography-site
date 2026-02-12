@@ -37,9 +37,7 @@
             font-size: 0.9rem;
         }
 
-        .btn-back:hover {
-            color: var(--accent);
-        }
+        .btn-back:hover { color: var(--accent); }
 
         h1 {
             text-align: center;
@@ -75,9 +73,7 @@
             object-fit: cover;
         }
 
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
+        .gallery-item:hover img { transform: scale(1.05); }
 
         .footer {
             text-align: center;
@@ -97,15 +93,15 @@
 
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="features.jpeg" alt="Detail 1">
+            <img src="features.jpeg" alt="Detail 1" onerror="this.src='features.jpg'">
         </div>
 
         <div class="gallery-item">
-            <img src="features1.jpg" alt="Detail 2">
+            <img src="features1.jpeg" alt="Detail 2" onerror="this.src='features1.jpg'">
         </div>
 
         <div class="gallery-item">
-            <img src="features2.jpg" alt="Detail 3">
+            <img src="features2.jpeg" alt="Detail 3" onerror="this.src='features2.jpg'">
         </div>
 
         <div class="gallery-item">
