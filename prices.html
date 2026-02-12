@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices | Drive & Detail</title>
+    <style>
+        :root { --accent: #ff3e3e; --bg: #0a0a0a; --card: #1a1a1a; }
+        body {
+            font-family: -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: white;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .container { max-width: 800px; margin: auto; }
+        .price-card {
+            background: var(--card);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border-left: 4px solid var(--accent);
+            text-align: left;
+        }
+        .price-card h2 { margin-top: 0; color: var(--accent); }
+        .cost { font-size: 1.5rem; font-weight: bold; margin-top: 10px; }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #888;
+            text-decoration: none;
+        }
+        .back-link:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SERVICES <span style="color:var(--accent)">&</span> PRICING</h1>
+    
+    <div class="price-card">
+        <h2>Rolling Shots</h2>
+        <p>High-speed motion photography of your vehicle on the move. Includes 5 fully edited digital selects.</p>
+        <div class="cost">$199</div>
+    </div>
+
+    <div class="price-card">
+        <h2>Full Studio Detail</h2>
+        <p>Complete coverage including interior, engine bay, and exterior lighting. 20+ high-res images.</p>
+        <div class="cost">$349</div>
+    </div>
+
+    <div class="price-card">
+        <h2>Commercial Package</h2>
+        <p>Full-day shoot for dealership inventory or private collections. Includes drone footage.</p>
+        <div class="cost">Contact for Quote</div>
+    </div>
+
+    <a href="index.html" class="back-link">← Return to Gallery</a>
+</div>
+
+</body>
+</html>
