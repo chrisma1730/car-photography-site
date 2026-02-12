@@ -50,7 +50,6 @@
 
         .accent { color: var(--accent); }
 
-        /* Updated Gallery Grid for better handling of mixed orientations */
         .gallery-grid {
             max-width: 1200px;
             margin: auto;
@@ -70,10 +69,10 @@
 
         .gallery-item img {
             width: 100%;
-            height: auto;
+            height: 400px; /* Fixed height for a cleaner grid */
             display: block;
             transition: transform 0.5s ease;
-            object-fit: cover;
+            object-fit: cover; /* Keeps aspect ratio while filling the box */
         }
 
         .gallery-item:hover img {
@@ -95,21 +94,22 @@
     </div>
 
     <h1>DETAILED <span class="accent">COLLECTION</span></h1>
-<div class="gallery-grid">
+
+    <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="features.jpeg" alt="Detail 1" onerror="this.src='https://via.placeholder.com/400x300?text=Check+Filename+features.jpeg'">
+            <img src="Features.JPEG" alt="Detail 1" loading="lazy">
         </div>
 
         <div class="gallery-item">
-            <img src="features1.jpg" alt="Detail 2" onerror="this.src='https://via.placeholder.com/400x300?text=Check+Filename+features1.jpg'">
+            <img src="Features1.JPEG" alt="Detail 2" loading="lazy">
         </div>
 
         <div class="gallery-item">
-            <img src="features2.jpg" alt="Detail 3" onerror="this.src='https://via.placeholder.com/400x300?text=Check+Filename+features2.jpg'">
+            <img src="Features2.JPEG" alt="Detail 3" loading="lazy">
         </div>
 
         <div class="gallery-item">
-            <img src="features3.jpeg" alt="Detail 4" onerror="this.src='https://via.placeholder.com/400x300?text=Check+Filename+features3.jpeg'">
+            <img src="Features3.JPEG" alt="Detail 4" loading="lazy">
         </div>
     </div>
 
@@ -119,4 +119,3 @@
 
 </body>
 </html>
-
