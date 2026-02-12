@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exterior | Drive & Detail</title>
+    <style>
+        :root {
+            --accent: #ff3e3e;
+            --bg: #0a0a0a;
+            --card: #1a1a1a;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+        }
+
+        .btn-back {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .btn-back:hover { color: var(--accent); }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+
+        .accent { color: var(--accent); }
+
+        .gallery-grid {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--card);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            height: 400px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+            object-fit: cover;
+        }
+
+        .gallery-item:hover img { transform: scale(1.05); }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            opacity: 0.5;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <a href="index.html" class="btn-back">← BACK TO HOME</a>
+    </div>
+
+    <h1>EXTERIOR <span class="accent">COLLECTION</span></h1>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="outer.jpeg" alt="Exterior 1" onerror="this.src='outer.jpg'">
+        </div>
+
+        <div class="gallery-item">
+            <img src="outer1.jpeg" alt="Exterior 2" onerror="this.src='outer1.jpg'">
+        </div>
+
+        <div class="gallery-item">
+            <img src="outer2.jpeg" alt="Exterior 3" onerror="this.src='outer2.jpg'">
+        </div>
+
+        <div class="gallery-item">
+            <img src="outer3.jpeg" alt="Exterior 4" onerror="this.src='outer3.jpg'">
+        </div>
+
+        <div class="gallery-item">
+            <img src="outer4.jpeg" alt="Exterior 5" onerror="this.src='outer4.jpg'">
+        </div>
+
+        <div class="gallery-item">
+            <img src="outer5.jpeg" alt="Exterior 6" onerror="this.src='outer5.jpg'">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Drive & Detail Photography</p>
+    </div>
+
+</body>
+</html>
