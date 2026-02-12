@@ -25,7 +25,6 @@
             margin: 0 auto 40px auto;
         }
 
-        /* Back Button Style */
         .btn-back {
             text-decoration: none;
             color: var(--text);
@@ -51,13 +50,14 @@
 
         .accent { color: var(--accent); }
 
-        /* Gallery Grid */
+        /* Updated Gallery Grid for better handling of mixed orientations */
         .gallery-grid {
             max-width: 1200px;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            align-items: start;
         }
 
         .gallery-item {
@@ -65,6 +65,7 @@
             border-radius: 8px;
             overflow: hidden;
             background: var(--card);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .gallery-item img {
@@ -72,6 +73,7 @@
             height: auto;
             display: block;
             transition: transform 0.5s ease;
+            object-fit: cover;
         }
 
         .gallery-item:hover img {
@@ -96,16 +98,19 @@
 
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=2000" alt="Car Detail 1">
+            <img src="features.jpeg" alt="Mercedes Blue Efficiency Detail">
         </div>
+
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=2000" alt="Car Detail 2">
+            <img src="features1.jpg" alt="Mercedes Alloy Wheel Detail">
         </div>
+
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1493238508003-03476f187593?q=80&w=2000" alt="Car Detail 3">
+            <img src="features2.jpg" alt="Land Rover Defender Front View">
         </div>
+
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2000" alt="Car Detail 4">
+            <img src="features3.jpeg" alt="Car Taillights Night Detail">
         </div>
     </div>
 
